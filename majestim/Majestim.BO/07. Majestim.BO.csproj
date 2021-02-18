@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3286762-DDB5-4A2D-8284-31CE0F99B750}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Majestim.BO</RootNamespace>
+    <AssemblyName>Majestim.BO</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ObjectListView">
+      <HintPath>..\..\..\..\Downloads\OLV\ObjectListView\bin\Debug\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OperationBanque\RapproBancaire\LigneBanque.cs" />
+    <Compile Include="OperationBanque\RapproBancaire\LigneBanqueRo.cs" />
+    <Compile Include="OperationBanque\RapproBancaire\LigneBanqueType.cs" />
+    <Compile Include="OperationBanque\RapproBancaire\LigneRapproComptaBordereau.cs" />
+    <Compile Include="OperationBanque\RapproBancaire\LigneRapproComptaChequeEmis.cs" />
+    <Compile Include="OperationBanque\RapproBancaire\LigneRapproComptaRo.cs" />
+    <Compile Include="OperationBanque\RapproBancaire\LigneRapproCompta.cs" />
+    <Compile Include="OperationGestion\AppelLoyer\LigneAppel.cs" />
+    <Compile Include="OperationGestion\AppelLoyer\LigneAppelDetail.cs" />
+    <Compile Include="OperationGestion\AppelLoyer\LigneAppelStatus.cs" />
+    <Compile Include="OperationGestion\AppelLoyer\__LigneDAppel.cs" />
+    <Compile Include="OperationBase\Compta\__CodeOperation.cs" />
+    <Compile Include="OperationBase\Compta\__Compte.cs" />
+    <Compile Include="OperationGestion\AppelLoyer\LigneAppelRoType.cs" />
+    <Compile Include="OperationBase\Compta\__Ecriture.cs" />
+    <Compile Include="OperationBase\Compta\__LigneEcriture.cs" />
+    <Compile Include="OperationBase\Compta\ChoixCompte.cs" />
+    <Compile Include="OperationBase\Compta\ChoixPeriode.cs" />
+    <Compile Include="Rapport\CompteLocataire\LigneComptesLocataireRo.cs" />
+    <Compile Include="Rapport\CompteLocataire\LigneComptesLocataireRoType.cs" />
+    <Compile Include="OperationGestion\AppelLoyer\LigneAppelRo.cs" />
+    <Compile Include="OperationBase\Compta\__Operation.cs" />
+    <Compile Include="Rapport\SituationLocataire\LigneSituationRo.cs" />
+    <Compile Include="OperationBase\Patrimoine\Adresse.cs" />
+    <Compile Include="OperationBase\Patrimoine\Bien.cs" />
+    <Compile Include="OperationBase\Contrat\ContratRo.cs" />
+    <Compile Include="OperationBase\Patrimoine\Immeuble.cs" />
+    <Compile Include="OperationBase\Compta\ChoixNbMois.cs" />
+    <Compile Include="Rapport\SituationLocataire\LigneSituationRoType.cs" />
+    <Compile Include="OperationBase\Tiers\Individu.cs" />
+    <Compile Include="OperationBase\Patrimoine\Lot.cs" />
+    <Compile Include="OperationBase\Tiers\PersonneMorale.cs" />
+    <Compile Include="OperationBase\Tiers\Preneur.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OperationBase\Tiers\Tiers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Majestim.DAL.Interface\14. Majestim.DAL.Interface.csproj">
+      <Project>{056679EB-9120-49BD-BB4B-64889A61BB52}</Project>
+      <Name>14. Majestim.DAL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.DTO.Enum\10. Majestim.DTO.Enum.csproj">
+      <Project>{55DD9458-3677-4231-A118-D129061B5B0F}</Project>
+      <Name>10. Majestim.DTO.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.DTO\09. Majestim.DTO.csproj">
+      <Project>{2C58D107-0992-4F8A-B373-8EFABF285232}</Project>
+      <Name>09. Majestim.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.Interface\15. Majestim.Interface.csproj">
+      <Project>{d918cadc-e0f6-4058-ba5e-0322a43ab40b}</Project>
+      <Name>15. Majestim.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

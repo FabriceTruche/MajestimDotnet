@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD2D5C47-167E-44D9-AD52-B19EE1003F38}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Majestim.DAL</RootNamespace>
+    <AssemblyName>Majestim.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.4\lib\netstandard2.0\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.17\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=5.11.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.6\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Container.5.11.7\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mvc, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Mvc.5.11.1\lib\net46\Unity.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="DapperRepository\AdresseCommand.cs" />
+    <Compile Include="DapperRepository\ArreteChargeCommand.cs" />
+    <Compile Include="DapperRepository\BaseRepartCommand.cs" />
+    <Compile Include="DapperRepository\BaseRepartLotCommand.cs" />
+    <Compile Include="DapperRepository\BienCommand.cs" />
+    <Compile Include="DapperRepository\BordereauCommand.cs" />
+    <Compile Include="DapperRepository\CategorieChequeEmisCommand.cs" />
+    <Compile Include="DapperRepository\ChargeCommand.cs" />
+    <Compile Include="DapperRepository\ChequeCommand.cs" />
+    <Compile Include="DapperRepository\ChequeEmisCommand.cs" />
+    <Compile Include="DapperRepository\CompteCommand.cs" />
+    <Compile Include="DapperRepository\ContratCommand.cs" />
+    <Compile Include="DapperRepository\Contrat_LotCommand.cs" />
+    <Compile Include="DapperRepository\EcritureCommand.cs" />
+    <Compile Include="DapperRepository\ExerciceCommand.cs" />
+    <Compile Include="DapperRepository\ImmeubleCommand.cs" />
+    <Compile Include="DapperRepository\IndividuCommand.cs" />
+    <Compile Include="DapperRepository\LienIndividuCommand.cs" />
+    <Compile Include="DapperRepository\LienPersonneMoraleCommand.cs" />
+    <Compile Include="DapperRepository\LigneAppelContratCommand.cs" />
+    <Compile Include="DapperRepository\LigneAppelDefinitionCommand.cs" />
+    <Compile Include="DapperRepository\LigneAppelGlobalCommand.cs" />
+    <Compile Include="DapperRepository\LigneAppelLotCommand.cs" />
+    <Compile Include="DapperRepository\LigneRapproCommand.cs" />
+    <Compile Include="DapperRepository\LotCommand.cs" />
+    <Compile Include="DapperRepository\MappingCommand.cs" />
+    <Compile Include="DapperRepository\OperationCommand.cs" />
+    <Compile Include="DapperRepository\ParamCompteRegulCommand.cs" />
+    <Compile Include="DapperRepository\ParamGenerauxCommand.cs" />
+    <Compile Include="DapperRepository\PersonneMoraleCommand.cs" />
+    <Compile Include="DapperRepository\PlanChargesCommand.cs" />
+    <Compile Include="DapperRepository\PreneurCommand.cs" />
+    <Compile Include="DapperRepository\ProprieteCommand.cs" />
+    <Compile Include="DapperRepository\RegleRapproCommand.cs" />
+    <Compile Include="DapperRepository\TiersCommand.cs" />
+    <Compile Include="DapperRepository\TypeAppelCommand.cs" />
+    <Compile Include="DapperRepository\TypeChargeCommand.cs" />
+    <Compile Include="DapperRepository\TypeCiviliteCommand.cs" />
+    <Compile Include="DapperRepository\TypeContratCommand.cs" />
+    <Compile Include="DapperRepository\TypeLienIndividuCommand.cs" />
+    <Compile Include="DapperRepository\TypeLienPersonneMoraleCommand.cs" />
+    <Compile Include="DapperRepository\TypeLotCommand.cs" />
+    <Compile Include="DapperRepository\TypeOperationCommand.cs" />
+    <Compile Include="DapperRepository\TypePersonneMoraleCommand.cs" />
+    <Compile Include="DapperRepository\TypePreneurCommand.cs" />
+    <Compile Include="DapperRepository\TypeTiersCommand.cs" />
+    <Compile Include="DefaultDapperCommand.cs" />
+    <Compile Include="GeneratedRepository\AdresseRepository.cs" />
+    <Compile Include="GeneratedRepository\ArreteChargeRepository.cs" />
+    <Compile Include="GeneratedRepository\BaseRepartLotRepository.cs" />
+    <Compile Include="GeneratedRepository\BaseRepartRepository.cs" />
+    <Compile Include="GeneratedRepository\BienRepository.cs" />
+    <Compile Include="GeneratedRepository\BordereauRepository.cs" />
+    <Compile Include="GeneratedRepository\CategorieChequeEmisRepository.cs" />
+    <Compile Include="GeneratedRepository\ChargeRepository.cs" />
+    <Compile Include="GeneratedRepository\ChequeEmisRepository.cs" />
+    <Compile Include="GeneratedRepository\ChequeRepository.cs" />
+    <Compile Include="GeneratedRepository\CompteRepository.cs" />
+    <Compile Include="GeneratedRepository\ContratRepository.cs" />
+    <Compile Include="GeneratedRepository\Contrat_LotRepository.cs" />
+    <Compile Include="GeneratedRepository\EcritureRepository.cs" />
+    <Compile Include="GeneratedRepository\ExerciceRepository.cs" />
+    <Compile Include="GeneratedRepository\ImmeubleRepository.cs" />
+    <Compile Include="GeneratedRepository\IndividuRepository.cs" />
+    <Compile Include="GeneratedRepository\LienIndividuRepository.cs" />
+    <Compile Include="GeneratedRepository\LienPersonneMoraleRepository.cs" />
+    <Compile Include="GeneratedRepository\LigneAppelContratRepository.cs" />
+    <Compile Include="GeneratedRepository\LigneAppelDefinitionRepository.cs" />
+    <Compile Include="GeneratedRepository\LigneAppelGlobalRepository.cs" />
+    <Compile Include="GeneratedRepository\LigneAppelLotRepository.cs" />
+    <Compile Include="GeneratedRepository\LigneRapproRepository.cs" />
+    <Compile Include="GeneratedRepository\LotRepository.cs" />
+    <Compile Include="GeneratedRepository\MappingRepository.cs" />
+    <Compile Include="GeneratedRepository\OperationRepository.cs" />
+    <Compile Include="GeneratedRepository\ParamCompteRegulRepository.cs" />
+    <Compile Include="GeneratedRepository\ParamGenerauxRepository.cs" />
+    <Compile Include="GeneratedRepository\PersonneMoraleRepository.cs" />
+    <Compile Include="GeneratedRepository\PlanChargesRepository.cs" />
+    <Compile Include="GeneratedRepository\PreneurRepository.cs" />
+    <Compile Include="GeneratedRepository\ProprieteRepository.cs" />
+    <Compile Include="GeneratedRepository\RegleRapproRepository.cs" />
+    <Compile Include="GeneratedRepository\TiersRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeAppelRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeChargeRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeCiviliteRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeContratRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeLienIndividuRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeLienPersonneMoraleRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeLotRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeOperationRepository.cs" />
+    <Compile Include="GeneratedRepository\TypePersonneMoraleRepository.cs" />
+    <Compile Include="GeneratedRepository\TypePreneurRepository.cs" />
+    <Compile Include="GeneratedRepository\TypeTiersRepository.cs" />
+    <Compile Include="OneManyBuilder.cs" />
+    <Compile Include="Repository\ContratRepository.cs" />
+    <Compile Include="Repository\__LIGNE_ECRITURE_VIEW_Repository.cs" />
+    <Compile Include="__DapperService.cs" />
+    <Compile Include="__DateTimeTypeHandler.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="__RepoFactory.cs" />
+    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="Repository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="VisualStudioHelper.ttinclude" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Majestim.DAL.Interface\14. Majestim.DAL.Interface.csproj">
+      <Project>{056679EB-9120-49BD-BB4B-64889A61BB52}</Project>
+      <Name>14. Majestim.DAL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.DTO\09. Majestim.DTO.csproj">
+      <Project>{2C58D107-0992-4F8A-B373-8EFABF285232}</Project>
+      <Name>09. Majestim.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.Interface\15. Majestim.Interface.csproj">
+      <Project>{D918CADC-E0F6-4058-BA5E-0322A43AB40B}</Project>
+      <Name>15. Majestim.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FilesUpdater.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FilesUpdater.txt</LastGenOutput>
+    </Content>
+    <Content Include="FilesUpdater.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FilesUpdater.tt</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

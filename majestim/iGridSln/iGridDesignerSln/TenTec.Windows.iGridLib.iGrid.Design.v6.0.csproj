@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Fabrice\source\repos\Majestim\iGridSln\TenTec.Windows.iGridLib.iGrid.Design.v6.0.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F25EDAF1-67D3-4FE0-8219-958C12A9931F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TenTec.Windows.iGridLib.iGrid.Design.v6.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <ApplicationVersion>6.0.37.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>TenTec.Windows.iGridLib.Design</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iGCategories.cs" />
+    <Compile Include="iGDesignTimeProperties.cs" />
+    <Compile Include="iGColCollectionEditor.cs" />
+    <Compile Include="iGColDesign.cs" />
+    <Compile Include="iGCollectionEditor.cs" />
+    <Compile Include="iGContentAlignmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="iGControlOpacity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="iGDescriptions.cs" />
+    <Compile Include="EditorServiceContext.cs" />
+    <Compile Include="iGDesigner.cs" />
+    <Compile Include="iGGlyphHeaders.cs" />
+    <Compile Include="iGGlyphScrollBar.cs" />
+    <Compile Include="iGBehaviorHeaders.cs" />
+    <Compile Include="iGBehaviorScrollBar.cs" />
+    <Compile Include="iGDesignerActionList.cs" />
+    <Compile Include="iGExceptionStrings.cs" />
+    <Compile Include="iGFormAutoFit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iGAutoFitAction.cs" />
+    <Compile Include="iGFormClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iGClearAction.cs" />
+    <Compile Include="iGFormSelectStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iGGroupRowLevelStylesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iGRowCollectionEditor.cs" />
+    <Compile Include="iGRowDesign.cs" />
+    <Compile Include="iGCellDesign.cs" />
+    <Compile Include="iGDropDownListDesigner.cs" />
+    <Compile Include="iGDropDownListVerbCollection.cs" />
+    <Compile Include="ResourceLoader.cs" />
+    <Compile Include="iGSerializerBase.cs" />
+    <Compile Include="iGRowCollectionSerializer.cs" />
+    <Compile Include="iGColCollectionSerializer.cs" />
+    <Compile Include="iGSerializer.cs" />
+    <Compile Include="iGStyleSerializer.cs" />
+    <Compile Include="iGColSerializer.cs" />
+    <Compile Include="iGConvertersStrings.cs" />
+    <Compile Include="iGRowDesignConverter.cs" />
+    <Compile Include="iGFontNoneAsNotSetConverter.cs" />
+    <Compile Include="iGColorEmptyAsNotSetConverter.cs" />
+    <Compile Include="iGColorEmptyAsEmptyConverter.cs" />
+    <Compile Include="iGStringConverter.cs" />
+    <Compile Include="iGStringNoneAsNotSetConverter.cs" />
+    <Compile Include="iGExpandableTypeConverter.cs" />
+    <Compile Include="iGTypeConverter.cs" />
+    <Compile Include="iGScrollBarCustomButtonConverter.cs" />
+    <Compile Include="iGCustomObjectConverter.cs" />
+    <Compile Include="iGDropDownListItemConverter.cs" />
+    <Compile Include="iGIndentFieldConverter.cs" />
+    <Compile Include="iGIndentConverter.cs" />
+    <Compile Include="iGColHdrStyleConverter.cs" />
+    <Compile Include="iGCellStyleConverter.cs" />
+    <Compile Include="iGColCellStyleConverter.cs" />
+    <Compile Include="iGColColHdrStyleConverter.cs" />
+    <Compile Include="iGCellStyleDesignConverter.cs" />
+    <Compile Include="iGColHdrStyleDesignConverter.cs" />
+    <Compile Include="iGStyleConverterBase.cs" />
+    <Compile Include="iGPenStyleConverter.cs" />
+    <Compile Include="iGImageIndexConverter.cs" />
+    <Compile Include="iGFlagsEnumConverter.cs" />
+    <Compile Include="iGFlagsEnumWithNotSetConverter.cs" />
+    <Compile Include="iGRowTextColObjectConverter.cs" />
+    <Compile Include="iGCellStyleArrayConverter.cs" />
+    <Compile Include="iGOpacityConverter.cs" />
+    <Compile Include="iGValueTypeConverter.cs" />
+    <Compile Include="iGReferenceNullAsNotSetConverter.cs" />
+    <Compile Include="iGPatternConverter.cs" />
+    <Compile Include="iGDesignTimeDefaultRowPatternConverter.cs" />
+    <Compile Include="iGDesignTimeDefaultColPatternConverter.cs" />
+    <Compile Include="iGColListConverter.cs" />
+    <Compile Include="iGImageIndexEditor.cs" />
+    <Compile Include="iGContentAlignmentEditor.cs" />
+    <Compile Include="iGCellStyleArrayEditor.cs" />
+    <Compile Include="iGOpacityEditor.cs" />
+    <Compile Include="iGDropDownListItemCollectionEditor.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DesignerArrowDown.gif" />
+    <EmbeddedResource Include="Resources\DesignerArrowUp.gif" />
+    <EmbeddedResource Include="Resources\iGridFormIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TenTec.Windows.iGridLib.iGrid.v6.0\TenTec.Windows.iGridLib.iGrid.v6.0.csproj">
+      <Project>{1a3d09d8-2e1f-48dc-9136-7da5259bda84}</Project>
+      <Name>TenTec.Windows.iGridLib.iGrid.v6.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

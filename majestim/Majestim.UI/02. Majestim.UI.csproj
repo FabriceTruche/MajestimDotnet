@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{995A7285-1C8E-41E6-B879-C29D5F9BBEE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Majestim.UI</RootNamespace>
+    <AssemblyName>Majestim.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.4\lib\netstandard2.0\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView">
+      <HintPath>..\..\..\..\Downloads\OLV\ObjectListView\bin\Debug\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command\BienCommand.cs" />
+    <Compile Include="Command\GroupCommand.cs" />
+    <Compile Include="Command\ItemCommand.cs" />
+    <Compile Include="Command\MainMenuCommand.cs" />
+    <Compile Include="Command\__TestCommand.cs" />
+    <Compile Include="Editor\ImmeubleEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\BienView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\BienView.Designer.cs">
+      <DependentUpon>BienView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\ComptaView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\ComptaView.Designer.cs">
+      <DependentUpon>ComptaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\ContratView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\ContratView.Designer.cs">
+      <DependentUpon>ContratView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThemeSimple\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ThemeSimple\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\__MenuView.cs" />
+    <Compile Include="Views\ThemeTreeMenu\TiersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\TiersView.Designer.cs">
+      <DependentUpon>TiersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\DataRow.cs" />
+    <Compile Include="Engine\StateObject.cs" />
+    <Compile Include="Views\ThemeTreeMenu\MainMenuFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ThemeTreeMenu\MainMenuFormView.Designer.cs">
+      <DependentUpon>MainMenuFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ObjectListViewEx.cs" />
+    <Compile Include="Helper\ObjectListViewEx.Designer.cs">
+      <DependentUpon>ObjectListViewEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\__BienView.cs" />
+    <Compile Include="Helper\__ContratView.cs" />
+    <Compile Include="Helper\__MainView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ThemeTreeMenu\BienView.resx">
+      <DependentUpon>BienView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThemeTreeMenu\ComptaView.resx">
+      <DependentUpon>ComptaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThemeTreeMenu\ContratView.resx">
+      <DependentUpon>ContratView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThemeSimple\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThemeTreeMenu\TiersView.resx">
+      <DependentUpon>TiersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThemeTreeMenu\MainMenuFormView.resx">
+      <DependentUpon>MainMenuFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\ObjectListViewEx.resx">
+      <DependentUpon>ObjectListViewEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Majestim.BL\06. Majestim.BL.csproj">
+      <Project>{A91BF5C3-E8F9-4F8C-B661-135AFB9E7FA2}</Project>
+      <Name>06. Majestim.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.BO\07. Majestim.BO.csproj">
+      <Project>{E3286762-DDB5-4A2D-8284-31CE0F99B750}</Project>
+      <Name>07. Majestim.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.DAL.Interface\14. Majestim.DAL.Interface.csproj">
+      <Project>{056679EB-9120-49BD-BB4B-64889A61BB52}</Project>
+      <Name>14. Majestim.DAL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.DAL\08. Majestim.DAL.csproj">
+      <Project>{BD2D5C47-167E-44D9-AD52-B19EE1003F38}</Project>
+      <Name>08. Majestim.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.DTO\09. Majestim.DTO.csproj">
+      <Project>{2C58D107-0992-4F8A-B373-8EFABF285232}</Project>
+      <Name>09. Majestim.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.Interface\15. Majestim.Interface.csproj">
+      <Project>{D918CADC-E0F6-4058-BA5E-0322A43AB40B}</Project>
+      <Name>15. Majestim.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Majestim.View.Interface\11. Majestim.View.Interface.csproj">
+      <Project>{8B327758-2D12-4E3E-AF57-87BB4EBD67B5}</Project>
+      <Name>11. Majestim.View.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

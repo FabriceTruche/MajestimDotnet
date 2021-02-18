@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <link rel="stylesheet" href="tv.css">
+    <script src="tv.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            {beginInit}
+            tvBuild("{tableName}");
+            {endInit}
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>TreeView</h2>
+    <p>template de treeview</p>
+
+    {beginTable}
+    <table class="table table-bordered table-sm">
+        <thead>
+        <tr class="{class}">
+            {beginHeader}
+            <th class="{class}">
+                {colName}
+            </th>
+            {endHeader}
+        </tr>
+        </thead>
+
+        <tbody id="{tableName}">
+        {beginRow}
+        <tr tv-level="{level}" class="{class}">
+            
+            {beginTitle}
+            <td class="f-line-text" colspan="5">
+                {title}
+            </td>
+            <td colspan="2" class="f-badge-solde">
+                <span class="badge badge-{color}">{solde}</span>
+            </td>
+            {endTitle}
+
+            {beginCol}
+                <td class="{class}" colspan="{colspan}">
+                    {tableCellText}
+                </td>
+            {endCol}
+
+        </tr>
+        {endRow}
+        </tbody>
+    </table>
+    {endTable}
+
+</div>
+</body>
+</html>

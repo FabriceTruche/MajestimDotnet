@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\10Tec\iGrid.NET 6.0\Bin\TenTec.Windows.iGridLib.iGrid.v6.0.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A3D09D8-2E1F-48DC-9136-7DA5259BDA84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TenTec.Windows.iGridLib.iGrid.v6.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <ApplicationVersion>6.0.37.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>TenTec.Windows.iGridLib</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGKeyManager.cs" />
+    <Compile Include="iGColHdrCollection.cs" />
+    <Compile Include="iGColHdr.cs" />
+    <Compile Include="iGFooterCellCollection.cs" />
+    <Compile Include="iGFooterCell.cs" />
+    <Compile Include="iGFooterRowCollection.cs" />
+    <Compile Include="iGFooterRowCellCollection.cs" />
+    <Compile Include="iGFooterRow.cs" />
+    <Compile Include="iGEnumerator.cs" />
+    <Compile Include="IiGEnumerableCollection.cs" />
+    <Compile Include="iGAboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iGRowCellCollection.cs" />
+    <Compile Include="iGColCellCollection.cs" />
+    <Compile Include="iGCellCollection.cs" />
+    <Compile Include="iGCell.cs" />
+    <Compile Include="iGColCollection.cs" />
+    <Compile Include="iGColPattern.cs" />
+    <Compile Include="iGDesignTimeDefaultColPattern.cs" />
+    <Compile Include="iGCol.cs" />
+    <Compile Include="iGHdrRowCollection.cs" />
+    <Compile Include="iGHdrRow.cs" />
+    <Compile Include="iGArrowDirection.cs" />
+    <Compile Include="iGDrawGridItem.cs" />
+    <Compile Include="IiGAutoCompleteControl.cs" />
+    <Compile Include="iGAutoCompleteControlValueSelectedEventHandler.cs" />
+    <Compile Include="iGAutoCompleteControlValueSelectedEventArgs.cs" />
+    <Compile Include="iGRowCollection.cs" />
+    <Compile Include="iGRow.cs" />
+    <Compile Include="iGCellNavigatorComparer.cs" />
+    <Compile Include="iGCellNavigator.cs" />
+    <Compile Include="iGColHdrNavigator.cs" />
+    <Compile Include="iGInternalOrderedCellCollection.cs" />
+    <Compile Include="iGInternalOrderedRowCollection.cs" />
+    <Compile Include="iGSelectedCellsCollection.cs" />
+    <Compile Include="iGSelectedRowsCollection.cs" />
+    <Compile Include="IiGControlPaint.cs" />
+    <Compile Include="IiGControlPaintInternal.cs" />
+    <Compile Include="iGControlPaintFunctions.cs" />
+    <Compile Include="iGSizeBoxAlign.cs" />
+    <Compile Include="iGScrollBarPart.cs" />
+    <Compile Include="iGControlState.cs" />
+    <Compile Include="iGHeaderPart.cs" />
+    <Compile Include="iGInternalControlPaintStyle.cs" />
+    <Compile Include="iGControlPaint3D.cs" />
+    <Compile Include="iGControlPaintFlat.cs" />
+    <Compile Include="iGColorManager.cs" />
+    <Compile Include="iGControlPaintStyle.cs" />
+    <Compile Include="iGControlPaintAppearance.cs" />
+    <Compile Include="iGXPThemeClasses.cs" />
+    <Compile Include="iGControlPaintXP.cs" />
+    <Compile Include="iGFooterCellData.cs" />
+    <Compile Include="iGFooterRowData.cs" />
+    <Compile Include="iGHdrRowData.cs" />
+    <Compile Include="iGHdrRowPattern.cs" />
+    <Compile Include="iGColHdrData.cs" />
+    <Compile Include="iGColHdrPattern.cs" />
+    <Compile Include="iGCellData.cs" />
+    <Compile Include="iGCellPattern.cs" />
+    <Compile Include="iGRowPattern.cs" />
+    <Compile Include="iGDesignTimeDefaultRowPattern.cs" />
+    <Compile Include="iGRowData.cs" />
+    <Compile Include="iGColData.cs" />
+    <Compile Include="iGPage.cs" />
+    <Compile Include="iGRowNavigator.cs" />
+    <Compile Include="iGRowType.cs" />
+    <Compile Include="iGTreeButtonState.cs" />
+    <Compile Include="iGSpecifiedColors.cs" />
+    <Compile Include="iGColDisposition.cs" />
+    <Compile Include="iGEditType.cs" />
+    <Compile Include="iGOrientation.cs" />
+    <Compile Include="iGGridSection.cs" />
+    <Compile Include="iGEditResult.cs" />
+    <Compile Include="iGScrollEventType.cs" />
+    <Compile Include="iGActions.cs" />
+    <Compile Include="iGAutoWidthColMode.cs" />
+    <Compile Include="iGAutoHeightRowMode.cs" />
+    <Compile Include="iGPressedMouseMoveMode.cs" />
+    <Compile Include="iGSelectionMode.cs" />
+    <Compile Include="iGElemControl.cs" />
+    <Compile Include="iGColHdrKind.cs" />
+    <Compile Include="iGFooterCellKind.cs" />
+    <Compile Include="iGRowResizeMode.cs" />
+    <Compile Include="iGClippedCellParts.cs" />
+    <Compile Include="iGAutoHeightEvents.cs" />
+    <Compile Include="iGTreeBranchState.cs" />
+    <Compile Include="iGAggregateFunction.cs" />
+    <Compile Include="iGDefaultAutoGroupRow.cs" />
+    <Compile Include="iGPropGridCategories.cs" />
+    <Compile Include="iGPropGridDescriptions.cs" />
+    <Compile Include="iGDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGSelectedItemChangedEventHandler.cs" />
+    <Compile Include="iGSelectedItemChangedEventArgs.cs" />
+    <Compile Include="iGDropDownListItem.cs" />
+    <Compile Include="iGDropDownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IiGDropDownControl.cs" />
+    <Compile Include="iGDropDownManager.cs" />
+    <Compile Include="AfterDropDownHideEventArgs.cs" />
+    <Compile Include="AfterDropDownHideEventHandler.cs" />
+    <Compile Include="HandleDestroyedEventArgs.cs" />
+    <Compile Include="HandleDestroyedEventHandler.cs" />
+    <Compile Include="DisableNCActivateNativeWindow.cs" />
+    <Compile Include="iGCellMouseDownEventArgs.cs" />
+    <Compile Include="iGCellMouseDownEventHandler.cs" />
+    <Compile Include="iGCellMouseUpEventArgs.cs" />
+    <Compile Include="iGCellMouseUpEventHandler.cs" />
+    <Compile Include="iGCellClickEventArgs.cs" />
+    <Compile Include="iGCellClickEventHandler.cs" />
+    <Compile Include="iGCellDoubleClickEventArgs.cs" />
+    <Compile Include="iGCellDoubleClickEventHandler.cs" />
+    <Compile Include="iGCellMouseMoveEventArgs.cs" />
+    <Compile Include="iGCellMouseMoveEventHandler.cs" />
+    <Compile Include="iGCellMouseEnterLeaveEventArgs.cs" />
+    <Compile Include="iGCellMouseEnterLeaveEventHandler.cs" />
+    <Compile Include="iGSelectionStartEndChangeEventArgs.cs" />
+    <Compile Include="iGSelectionStartEndChangeEventHandler.cs" />
+    <Compile Include="iGSelectionChangingEventArgs.cs" />
+    <Compile Include="iGSelectionChangingEventHandler.cs" />
+    <Compile Include="iGCurCellChangeRequestEventArgs.cs" />
+    <Compile Include="iGCurCellChangeRequestEventHandler.cs" />
+    <Compile Include="iGCurRowChangeRequestEventArgs.cs" />
+    <Compile Include="iGCurRowChangeRequestEventHandler.cs" />
+    <Compile Include="iGCustomDrawCellEventArgs.cs" />
+    <Compile Include="iGCustomDrawCellEventHandler.cs" />
+    <Compile Include="iGCustomDrawCellGetHeightEventArgs.cs" />
+    <Compile Include="iGCustomDrawCellGetHeightEventHandler.cs" />
+    <Compile Include="iGCustomDrawCellGetWidthEventArgs.cs" />
+    <Compile Include="iGCustomDrawCellGetWidthEventHandler.cs" />
+    <Compile Include="iGAfterAutoGroupRowCreatedEventArgs.cs" />
+    <Compile Include="iGAfterAutoGroupRowCreatedEventHandler.cs" />
+    <Compile Include="iGColHdrMouseDownEventArgs.cs" />
+    <Compile Include="iGColHdrMouseDownEventHandler.cs" />
+    <Compile Include="iGColHdrMouseUpEventArgs.cs" />
+    <Compile Include="iGColHdrMouseUpEventHandler.cs" />
+    <Compile Include="iGColHdrClickEventArgs.cs" />
+    <Compile Include="iGColHdrClickEventHandler.cs" />
+    <Compile Include="iGColHdrDoubleClickEventArgs.cs" />
+    <Compile Include="iGColHdrDoubleClickEventHandler.cs" />
+    <Compile Include="iGColHdrMouseMoveEventArgs.cs" />
+    <Compile Include="iGColHdrMouseMoveEventHandler.cs" />
+    <Compile Include="iGColHdrMouseEnterLeaveEventArgs.cs" />
+    <Compile Include="iGColHdrMouseEnterLeaveEventHandler.cs" />
+    <Compile Include="iGColDividerDoubleClickEventArgs.cs" />
+    <Compile Include="iGColDividerDoubleClickEventHandler.cs" />
+    <Compile Include="iGColWidthEventArgs.cs" />
+    <Compile Include="iGColWidthEventHandler.cs" />
+    <Compile Include="iGColHdrStartDragEventArgs.cs" />
+    <Compile Include="iGColHdrStartDragEventHandler.cs" />
+    <Compile Include="iGColHdrEndDragEventArgs.cs" />
+    <Compile Include="iGColHdrEndDragEventHandler.cs" />
+    <Compile Include="iGFooterCellMouseMoveEventArgs.cs" />
+    <Compile Include="iGFooterCellMouseMoveEventHandler.cs" />
+    <Compile Include="iGFooterCellMouseDownEventArgs.cs" />
+    <Compile Include="iGFooterCellMouseDownEventHandler.cs" />
+    <Compile Include="iGFooterCellMouseUpEventArgs.cs" />
+    <Compile Include="iGFooterCellMouseUpEventHandler.cs" />
+    <Compile Include="iGFooterCellMouseEnterLeaveEventArgs.cs" />
+    <Compile Include="iGFooterCellMouseEnterLeaveEventHandler.cs" />
+    <Compile Include="iGFooterCellClickEventArgs.cs" />
+    <Compile Include="iGFooterCellClickEventHandler.cs" />
+    <Compile Include="iGFooterCellDoubleClickEventArgs.cs" />
+    <Compile Include="iGFooterCellDoubleClickEventHandler.cs" />
+    <Compile Include="iGCustomDrawColHdrEventArgs.cs" />
+    <Compile Include="iGCustomDrawColHdrEventHandler.cs" />
+    <Compile Include="iGCustomDrawColHdrGetHeightEventArgs.cs" />
+    <Compile Include="iGCustomDrawColHdrGetHeightEventHandler.cs" />
+    <Compile Include="iGCustomDrawColHdrGetWidthEventArgs.cs" />
+    <Compile Include="iGCustomDrawColHdrGetWidthEventHandler.cs" />
+    <Compile Include="iGCustomDrawFooterCellEventArgs.cs" />
+    <Compile Include="iGCustomDrawFooterCellEventHandler.cs" />
+    <Compile Include="iGCustomDrawFooterCellGetHeightEventArgs.cs" />
+    <Compile Include="iGCustomDrawFooterCellGetHeightEventHandler.cs" />
+    <Compile Include="iGCustomDrawFooterCellGetWidthEventArgs.cs" />
+    <Compile Include="iGCustomDrawFooterCellGetWidthEventHandler.cs" />
+    <Compile Include="iGCustomDrawFooterRowHdrEventArgs.cs" />
+    <Compile Include="iGCustomDrawFooterRowHdrEventHandler.cs" />
+    <Compile Include="iGIncludeRowInTotalsCalculationEventArgs.cs" />
+    <Compile Include="iGIncludeRowInTotalsCalculationEventHandler.cs" />
+    <Compile Include="iGCustomSortEventArgs.cs" />
+    <Compile Include="iGCustomSortEventHandler.cs" />
+    <Compile Include="iGBeforeRowStateChangedEventArgs.cs" />
+    <Compile Include="iGBeforeRowStateChangedEventHandler.cs" />
+    <Compile Include="iGAfterRowStateChangedEventArgs.cs" />
+    <Compile Include="iGAfterRowStateChangedEventHandler.cs" />
+    <Compile Include="iGRequestEditEventArgs.cs" />
+    <Compile Include="iGRequestEditEventHandler.cs" />
+    <Compile Include="iGBeforeCommitEditEventArgs.cs" />
+    <Compile Include="iGBeforeCommitEditEventHandler.cs" />
+    <Compile Include="iGCancelEditEventArgs.cs" />
+    <Compile Include="iGCancelEditEventHandler.cs" />
+    <Compile Include="iGAfterCommitEditEventArgs.cs" />
+    <Compile Include="iGAfterCommitEditEventHandler.cs" />
+    <Compile Include="iGCustomGroupValueEventArgs.cs" />
+    <Compile Include="iGCustomGroupValueEventHandler.cs" />
+    <Compile Include="iGTextBoxFilterCharEventArgs.cs" />
+    <Compile Include="iGTextBoxFilterCharEventHandler.cs" />
+    <Compile Include="iGTextBoxKeyEventArgs.cs" />
+    <Compile Include="iGTextBoxKeyDownEventArgs.cs" />
+    <Compile Include="iGTextBoxKeyDownEventHandler.cs" />
+    <Compile Include="iGTextBoxKeyUpEventArgs.cs" />
+    <Compile Include="iGTextBoxKeyUpEventHandler.cs" />
+    <Compile Include="iGTextBoxKeyPressEventArgs.cs" />
+    <Compile Include="iGTextBoxKeyPressEventHandler.cs" />
+    <Compile Include="iGTextBoxTextChangedEventArgs.cs" />
+    <Compile Include="iGTextBoxTextChangedEventHandler.cs" />
+    <Compile Include="iGScrollEventArgs.cs" />
+    <Compile Include="iGScrollEventHandler.cs" />
+    <Compile Include="iGEllipsisButtonClickEventArgs.cs" />
+    <Compile Include="iGEllipsisButtonClickEventHandler.cs" />
+    <Compile Include="iGCustomDrawEllipsisButtonEventArgs.cs" />
+    <Compile Include="iGCustomDrawEllipsisButtonEventHandler.cs" />
+    <Compile Include="iGCustomDrawComboButtonEventArgs.cs" />
+    <Compile Include="iGCustomDrawComboButtonEventHandler.cs" />
+    <Compile Include="iGColSetChangeEventArgs.cs" />
+    <Compile Include="iGColSetChangeEventHandler.cs" />
+    <Compile Include="iGRowSetChangeEventArgs.cs" />
+    <Compile Include="iGRowSetChangeEventHandler.cs" />
+    <Compile Include="iGRowVisibleChangedEventArgs.cs" />
+    <Compile Include="iGRowVisibleChangedEventHandler.cs" />
+    <Compile Include="iGStartDragCellEventArgs.cs" />
+    <Compile Include="iGStartDragCellEventHandler.cs" />
+    <Compile Include="iGRowHdrMouseDownEventArgs.cs" />
+    <Compile Include="iGRowHdrMouseDownEventHandler.cs" />
+    <Compile Include="iGRowHdrMouseUpEventArgs.cs" />
+    <Compile Include="iGRowHdrMouseUpEventHandler.cs" />
+    <Compile Include="iGRowHdrClickEventArgs.cs" />
+    <Compile Include="iGRowHdrClickEventHandler.cs" />
+    <Compile Include="iGRowHdrDoubleClickEventArgs.cs" />
+    <Compile Include="iGRowHdrDoubleClickEventHandler.cs" />
+    <Compile Include="iGRowHdrMouseMoveEventArgs.cs" />
+    <Compile Include="iGRowHdrMouseMoveEventHandler.cs" />
+    <Compile Include="iGRowHdrMouseEnterLeaveEventArgs.cs" />
+    <Compile Include="iGRowHdrMouseEnterLeaveEventHandler.cs" />
+    <Compile Include="iGRequestRowResizeEventArgs.cs" />
+    <Compile Include="iGRequestRowResizeEventHandler.cs" />
+    <Compile Include="iGRowHeightEventArgs.cs" />
+    <Compile Include="iGRowHeightEventHandler.cs" />
+    <Compile Include="iGRowDividerDoubleClickEventArgs.cs" />
+    <Compile Include="iGRowDividerDoubleClickEventHandler.cs" />
+    <Compile Include="iGRowHdrDynamicColorEventArgs.cs" />
+    <Compile Include="iGRowHdrDynamicColorEventHandler.cs" />
+    <Compile Include="iGCustomDrawRowHdrBackgroundEventArgs.cs" />
+    <Compile Include="iGCustomDrawRowHdrBackgroundEventHandler.cs" />
+    <Compile Include="iGCustomDrawRowHdrForegroundEventArgs.cs" />
+    <Compile Include="iGCustomDrawRowHdrForegroundEventHandler.cs" />
+    <Compile Include="iGCustomDrawRowHdrGetHeightEventArgs.cs" />
+    <Compile Include="iGCustomDrawRowHdrGetHeightEventHandler.cs" />
+    <Compile Include="iGCustomDrawRowHdrGetWidthEventArgs.cs" />
+    <Compile Include="iGCustomDrawRowHdrGetWidthEventHandler.cs" />
+    <Compile Include="iGRequestSearchAsTypeMatchRuleEventArgs.cs" />
+    <Compile Include="iGRequestSearchAsTypeMatchRuleEventHandler.cs" />
+    <Compile Include="iGSearchAsTypeCustomCompareEventArgs.cs" />
+    <Compile Include="iGSearchAsTypeCustomCompareEventHandler.cs" />
+    <Compile Include="iGDropDownListCustomCompareEventArgs.cs" />
+    <Compile Include="iGDropDownListCustomCompareEventHandler.cs" />
+    <Compile Include="iGRequestAutoCompleteControlEventArgs.cs" />
+    <Compile Include="iGRequestAutoCompleteControlEventHandler.cs" />
+    <Compile Include="iGRequestDropDownControlEventArgs.cs" />
+    <Compile Include="iGRequestDropDownControlEventHandler.cs" />
+    <Compile Include="iGRequestCellToolTipTextEventArgs.cs" />
+    <Compile Include="iGRequestCellToolTipTextEventHandler.cs" />
+    <Compile Include="iGRequestColHdrToolTipTextEventArgs.cs" />
+    <Compile Include="iGRequestColHdrToolTipTextEventHandler.cs" />
+    <Compile Include="iGRequestFooterCellToolTipTextEventArgs.cs" />
+    <Compile Include="iGRequestFooterCellToolTipTextEventHandler.cs" />
+    <Compile Include="iGRequestElemControlToolTipTextEventArgs.cs" />
+    <Compile Include="iGRequestElemControlToolTipTextEventHandler.cs" />
+    <Compile Include="iGCellDynamicStringFormatEventArgs.cs" />
+    <Compile Include="iGCellDynamicStringFormatEventHandler.cs" />
+    <Compile Include="iGCellDynamicContentsEventArgs.cs" />
+    <Compile Include="iGCellDynamicContentsEventHandler.cs" />
+    <Compile Include="iGCellDynamicFormattingEventArgs.cs" />
+    <Compile Include="iGCellDynamicFormattingEventHandler.cs" />
+    <Compile Include="iGColOrderChangedEventArgs.cs" />
+    <Compile Include="iGColOrderChangedEventHandler.cs" />
+    <Compile Include="iGCustomDrawLevelIndentPartEventArgs.cs" />
+    <Compile Include="iGCustomDrawLevelIndentPartEventHandler.cs" />
+    <Compile Include="iGCustomDrawControlEventArgs.cs" />
+    <Compile Include="iGCustomDrawControlEventHandler.cs" />
+    <Compile Include="iGAdjustTreeButtonLocationEventArgs.cs" />
+    <Compile Include="iGAdjustTreeButtonLocationEventHandler.cs" />
+    <Compile Include="iGColHdrComboBeforeCommitEventArgs.cs" />
+    <Compile Include="iGColHdrComboBeforeCommitEventHandler.cs" />
+    <Compile Include="iGColHdrComboAfterCommitEventArgs.cs" />
+    <Compile Include="iGColHdrComboAfterCommitEventHandler.cs" />
+    <Compile Include="iGColHdrComboCancelEventArgs.cs" />
+    <Compile Include="iGColHdrComboCancelEventHandler.cs" />
+    <Compile Include="iGUnmergeCellsRequiredReason.cs" />
+    <Compile Include="iGUnmergeCellsRequiredEventArgs.cs" />
+    <Compile Include="iGUnmergeCellsRequiredEventHandler.cs" />
+    <Compile Include="iGExceptionMessages.cs" />
+    <Compile Include="iGFillWithDataRowAddedEventArgs.cs" />
+    <Compile Include="iGFillWithDataRowAddedEventHandler.cs" />
+    <Compile Include="iGFrozenArea.cs" />
+    <Compile Include="iGGridLines.cs" />
+    <Compile Include="iGGroupBox.cs" />
+    <Compile Include="iGHeader.cs" />
+    <Compile Include="iGHdrHotTrackFlags.cs" />
+    <Compile Include="iGInternalInfrastructure.cs" />
+    <Compile Include="iGFooter.cs" />
+    <Compile Include="iGTreeLines.cs" />
+    <Compile Include="IiGridProvider.cs" />
+    <Compile Include="IiGImageListProvider.cs" />
+    <Compile Include="iGNativeToolTip.cs" />
+    <Compile Include="iGToolTipWindowManager.cs" />
+    <Compile Include="iGToolTipWindowPaintEventArgs.cs" />
+    <Compile Include="iGToolTipWindowPaintEventHandler.cs" />
+    <Compile Include="iGUIStrings.cs" />
+    <Compile Include="iGIsRowVisibleDelegate.cs" />
+    <Compile Include="iGCellEditorBase.cs" />
+    <Compile Include="iGDefaultTextEditor.cs" />
+    <Compile Include="iGRowSelectionInCellModeTypes.cs" />
+    <Compile Include="iGHighlightSelCellItems.cs" />
+    <Compile Include="iGSearchAsType.cs" />
+    <Compile Include="iGRowHeader.cs" />
+    <Compile Include="iGRowHdrGlyph.cs" />
+    <Compile Include="iGManagerLayout.cs" />
+    <Compile Include="iGLayout.cs" />
+    <Compile Include="iGLayoutFlags.cs" />
+    <Compile Include="iGHyperlinkManager.cs" />
+    <Compile Include="iGArrayManager.cs" />
+    <Compile Include="iGXmlManager.cs" />
+    <Compile Include="iGAligner.cs" />
+    <Compile Include="iGMouseEventsData.cs" />
+    <Compile Include="iGColResizeData.cs" />
+    <Compile Include="iGColMoveData.cs" />
+    <Compile Include="iGSelectCellsData.cs" />
+    <Compile Include="iGAutoScrollData.cs" />
+    <Compile Include="iGAutoScrollDirections.cs" />
+    <Compile Include="iGAutoScrollMoveDirection.cs" />
+    <Compile Include="iGMouseArea.cs" />
+    <Compile Include="iGResizeRowData.cs" />
+    <Compile Include="iGNativeMethods.cs" />
+    <Compile Include="iGScrollBarBaseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGScrollBarCustomButtonClickEventArgs.cs" />
+    <Compile Include="iGScrollBarCustomButtonClickEventHandler.cs" />
+    <Compile Include="iGScrollBarCustomButtonDrawEventArgs.cs" />
+    <Compile Include="iGScrollBarCustomButtonDrawEventHandler.cs" />
+    <Compile Include="iGScrollBarCustomButtonMouseDownUpEventArgs.cs" />
+    <Compile Include="iGScrollBarCustomButtonMouseDownUpEventHandler.cs" />
+    <Compile Include="iGScrollBarCustomButtonMouseEnterLeaveEventArgs.cs" />
+    <Compile Include="iGScrollBarCustomButtonMouseEnterLeaveEventHandler.cs" />
+    <Compile Include="iGScrollBarCustomButtonMouseMoveEventArgs.cs" />
+    <Compile Include="iGScrollBarCustomButtonMouseMoveEventHandler.cs" />
+    <Compile Include="iGScrollBarValueChangingEventArgs.cs" />
+    <Compile Include="iGScrollBarValueChangingEventHandler.cs" />
+    <Compile Include="iGHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGMouseProcessingStyle.cs" />
+    <Compile Include="iGMouseEventsProcessing.cs" />
+    <Compile Include="iGMouseEvents.cs" />
+    <Compile Include="iGScrollBarBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGScrollBar.cs" />
+    <Compile Include="iGScrollBarVisibility.cs" />
+    <Compile Include="iGScrollBarSettings.cs" />
+    <Compile Include="iGScrollBarCustomButtonSubControl.cs" />
+    <Compile Include="iGScrollBarCustomButtonAlign.cs" />
+    <Compile Include="iGScrollBarCustomButton.cs" />
+    <Compile Include="iGScrollBarCustomButtonCollection.cs" />
+    <Compile Include="iGSubControl.cs" />
+    <Compile Include="iGVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGSearchAsTypeManager.cs" />
+    <Compile Include="iGSearchAsTypeMode.cs" />
+    <Compile Include="iGMatchRule.cs" />
+    <Compile Include="iGSortObject.cs" />
+    <Compile Include="iGSortItem.cs" />
+    <Compile Include="iGColSortParams.cs" />
+    <Compile Include="iGSortOrder.cs" />
+    <Compile Include="iGSortType.cs" />
+    <Compile Include="iGSortData.cs" />
+    <Compile Include="iGRowNavigatorComparer.cs" />
+    <Compile Include="iGCellsComparer.cs" />
+    <Compile Include="iGRowNavigatorMapComparer.cs" />
+    <Compile Include="iGRowNavigatorMapItem.cs" />
+    <Compile Include="iGHierarchicalRowNavigatorComparer.cs" />
+    <Compile Include="iGHierarchicalRowNavigator.cs" />
+    <Compile Include="iGManagerCompare.cs" />
+    <Compile Include="iGStyleBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGCellStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGColHdrStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGFooterCellStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGCellStyleDesign.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGColHdrStyleDesign.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iGIndent.cs" />
+    <Compile Include="iGStringTrimming.cs" />
+    <Compile Include="iGContentAlignment.cs" />
+    <Compile Include="iGStringFormatFlags.cs" />
+    <Compile Include="iGBool.cs" />
+    <Compile Include="iGCellFitContentsInViewport.cs" />
+    <Compile Include="iGCellTypeFlags.cs" />
+    <Compile Include="iGCellType.cs" />
+    <Compile Include="iGBorderStyle.cs" />
+    <Compile Include="iGPenStyle.cs" />
+    <Compile Include="iGGridLinesMode.cs" />
+    <Compile Include="iGCellDrawType.cs" />
+    <Compile Include="iGCellDrawTypeFlags.cs" />
+    <Compile Include="iGTextPosToImage.cs" />
+    <Compile Include="iGCustomDrawFlags.cs" />
+    <Compile Include="iGEmptyStringAs.cs" />
+    <Compile Include="iGCellDrawFlags.cs" />
+    <Compile Include="iGCellFlags.cs" />
+    <Compile Include="iGColHdrFlags.cs" />
+    <Compile Include="iGTextBox.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AboutCompanyLogo.gif" />
+    <EmbeddedResource Include="Resources\Arrows.ico" />
+    <EmbeddedResource Include="Resources\ArrowUp.ico" />
+    <EmbeddedResource Include="Resources\AutoScrollCenter.bmp" />
+    <EmbeddedResource Include="Resources\AutoScrollCenterHorz.bmp" />
+    <EmbeddedResource Include="Resources\AutoScrollCenterVert.bmp" />
+    <EmbeddedResource Include="Resources\ResizeCol.cur" />
+    <EmbeddedResource Include="Resources\ResizeRow.cur" />
+    <EmbeddedResource Include="Resources\RowHdrImageCurRow.gif" />
+    <EmbeddedResource Include="Resources\RowHdrImageCurRowError.png" />
+    <EmbeddedResource Include="Resources\RowHdrImageEditing.gif" />
+    <EmbeddedResource Include="Resources\RowHdrImageError.png" />
+    <EmbeddedResource Include="Resources\RowHdrImageNewRow.gif" />
+    <EmbeddedResource Include="Resources\RowHdrImageUncommitedChanges.gif" />
+    <EmbeddedResource Include="Resources\SearchAsTypeArrowDown.png" />
+    <EmbeddedResource Include="Resources\SearchAsTypeArrowUp.png" />
+    <EmbeddedResource Include="Resources\SearchAsTypeError.png" />
+    <EmbeddedResource Include="Resources\ToolBoxiGCellStyle.bmp" />
+    <EmbeddedResource Include="Resources\ToolBoxiGColHdrStyle.bmp" />
+    <EmbeddedResource Include="Resources\ToolBoxiGDropDownList.bmp" />
+    <EmbeddedResource Include="Resources\ToolBoxiGrid.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

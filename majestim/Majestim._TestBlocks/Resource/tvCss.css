@@ -1,0 +1,115 @@
+﻿
+.f-header-title {
+    background: #009999;
+    line-height: 3rem;
+    color: white;
+    white-space: wrap;
+}
+
+.f-title-1 {
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 12px;
+    background: #00cccc;
+    color: white;
+    line-height: 1.5rem;
+}
+
+.f-title-2 {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 11px;
+    background: #66ffff;
+    color: black;
+    line-height: 1.5rem;
+    text-align: right;
+}
+
+.f-header-text {
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+}
+
+.f-line-text {
+    white-space: nowrap;
+}
+
+.f-long-text {
+    white-space: wrap;
+    max-width: 250px;
+}
+
+.f-currency {
+    text-align: right;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.f-date {
+    text-align: center;
+}
+
+.f-date-2 {
+    text-align: left;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.f-row-pair {
+    background: #e6ffff;
+}
+
+.f-row-odd {
+    background: #ccffff;
+}
+
+.f-badge-solde {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.badge {
+    font-weight: normal;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+tr:hover {
+    /* background-color	: lavender; */
+    box-shadow: 0px 0px 5px 1px gray inset;
+}
+
+.first-column {
+    /* background-color: lightblue; */
+    /*padding: 0px;
+    vertical-align: bottom;*/
+    /* font: "Lucida Console"; */
+}
+
+tr {
+    line-height: .7rem;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 0px solid red;
+    border-top: 1px solid lightgray;
+}
+
+td {
+    font-family: Verdana,sans serif;
+    font-size: 11px;
+}
+
+.tv-icon {
+    width: 16px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+
+.tv-no-child {
+    width: 16px;
+    border: 0px;
+}

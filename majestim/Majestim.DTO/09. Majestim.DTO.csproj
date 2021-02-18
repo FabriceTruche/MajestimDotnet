@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C58D107-0992-4F8A-B373-8EFABF285232}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Majestim.DTO</RootNamespace>
+    <AssemblyName>Majestim.DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTOExtension\CompteDto.cs" />
+    <Compile Include="DTOExtension\EcritureDto.cs" />
+    <Compile Include="DTOExtension\OperationDto.cs" />
+    <Compile Include="DTOExtension\TypeOperationDto.cs" />
+    <Compile Include="DTO\AdresseDto.cs" />
+    <Compile Include="DTO\ArreteChargeDto.cs" />
+    <Compile Include="DTO\BaseRepartDto.cs" />
+    <Compile Include="DTO\BaseRepartLotDto.cs" />
+    <Compile Include="DTO\BienDto.cs" />
+    <Compile Include="DTO\BordereauDto.cs" />
+    <Compile Include="DTO\CategorieChequeEmisDto.cs" />
+    <Compile Include="DTO\ChargeDto.cs" />
+    <Compile Include="DTO\ChequeDto.cs" />
+    <Compile Include="DTO\ChequeEmisDto.cs" />
+    <Compile Include="DTO\CompteDto.cs" />
+    <Compile Include="DTO\ContratDto.cs" />
+    <Compile Include="DTO\Contrat_LotDto.cs" />
+    <Compile Include="DTO\EcritureDto.cs" />
+    <Compile Include="DTO\ExerciceDto.cs" />
+    <Compile Include="DTO\ImmeubleDto.cs" />
+    <Compile Include="DTO\IndividuDto.cs" />
+    <Compile Include="DTO\LienIndividuDto.cs" />
+    <Compile Include="DTO\LienPersonneMoraleDto.cs" />
+    <Compile Include="DTO\LigneAppelContratDto.cs" />
+    <Compile Include="DTO\LigneAppelDefinitionDto.cs" />
+    <Compile Include="DTO\LigneAppelGlobalDto.cs" />
+    <Compile Include="DTO\LigneAppelLotDto.cs" />
+    <Compile Include="DTO\LigneRapproDto.cs" />
+    <Compile Include="DTO\LotDto.cs" />
+    <Compile Include="DTO\MappingDto.cs" />
+    <Compile Include="DTO\OperationDto.cs" />
+    <Compile Include="DTO\ParamCompteRegulDto.cs" />
+    <Compile Include="DTO\ParamGenerauxDto.cs" />
+    <Compile Include="DTO\PersonneMoraleDto.cs" />
+    <Compile Include="DTO\PlanChargesDto.cs" />
+    <Compile Include="DTO\PreneurDto.cs" />
+    <Compile Include="DTO\ProprieteDto.cs" />
+    <Compile Include="DTO\RegleRapproDto.cs" />
+    <Compile Include="DTO\TiersDto.cs" />
+    <Compile Include="DTO\TypeAppelDto.cs" />
+    <Compile Include="DTO\TypeChargeDto.cs" />
+    <Compile Include="DTO\TypeCiviliteDto.cs" />
+    <Compile Include="DTO\TypeContratDto.cs" />
+    <Compile Include="DTO\TypeLienIndividuDto.cs" />
+    <Compile Include="DTO\TypeLienPersonneMoraleDto.cs" />
+    <Compile Include="DTO\TypeLotDto.cs" />
+    <Compile Include="DTO\TypeOperationDto.cs" />
+    <Compile Include="DTO\TypePersonneMoraleDto.cs" />
+    <Compile Include="DTO\TypePreneurDto.cs" />
+    <Compile Include="DTO\TypeTiersDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Majestim.Interface\15. Majestim.Interface.csproj">
+      <Project>{D918CADC-E0F6-4058-BA5E-0322A43AB40B}</Project>
+      <Name>15. Majestim.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="VisualStudioHelper.ttinclude" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FilesUpdater.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FilesUpdater.txt</LastGenOutput>
+    </Content>
+    <Content Include="FilesUpdater.txt">
+      <DependentUpon>FilesUpdater.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
